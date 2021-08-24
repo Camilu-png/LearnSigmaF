@@ -2,18 +2,26 @@
     margin: 0;
     color: #232d34;
 }
+.fa-folder,.fa-folder-open{
+    display:none;
+    position:fixed;
+}
 header{
     background-color: #ecca99;   
     padding: 1%;
     border-bottom: 1px solid#232d34;
+    position:fixed;
+    width: 100%;
 }
 header img{
-    float: left;
+    position:absolute;
     width: 10%;
 }
+
 header nav{
     display: flex;
     justify-content:space-around;
+    margin-left: 10%;
 }
 header nav a{
     text-decoration: none;
@@ -42,4 +50,49 @@ footer a{
 }
 #github:hover{
     fill: #ffffff;
+}
+
+@media screen and (max-width:700px){
+
+    header img{
+        width: 25%;
+    }
+    header{
+        height: 40px;
+    }
+    nav a{
+        background-color: #ecca99;
+        display: block;
+        width: 75%;
+    }
+    .fa-folder,.fa-folder-open{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #fcc06b44;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        z-index: 4;
+        right: 1%;
+        top: 1%;
+        color: rgb(255, 255, 255, 0);
+    }
+    .fa-folder.is-active,.fa-folder-open.is-active{
+        color: #575f65
+    }
+    .menu{
+        display:none;
+    }
+    .menu.is-active{
+        display:block;
+        height:auto;
+        width: 75%;
+        margin: 0;
+        position:static;
+        position:fixed;
+        z-index: 3;
+        top:12%;
+        right: -20%;
+    }
 }
