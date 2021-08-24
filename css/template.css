@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    color: #232d34;
+}
+header{
+    background-color: #ecca99;   
+    padding: 1%;
+    border-bottom: 1px solid#232d34;
+}
+header img{
+    float: left;
+    width: 10%;
+}
+header nav{
+    display: flex;
+    justify-content:space-around;
+}
+header nav a{
+    text-decoration: none;
+    transition: .5s;
+}
+header nav a:hover{
+    color:#575f65;
+}
+footer{
+    background-color: #ecca99;
+    position:absolute;
+    bottom:0;
+    margin: 0;
+    width: 98%;
+    padding: 1%;
+    padding-bottom: 0.5%;
+    text-align: end;
+}
+footer a{
+    margin: auto 1%;
+    transition: .5s;
+    fill: #232d34;
+}
+#twitter:hover{
+    fill: rgb(255, 255, 255);
+}
+#github:hover{
+    fill: #ffffff;
+}

@@ -7,6 +7,9 @@
     margin-left: 5%;
     width: 45%;
 }
+img{
+    margin: 15% auto;
+}
 nav a{
     display: inline-block;
     width: 50%;
@@ -42,10 +45,10 @@ nav a:active{
     }
     .izquierda{
         float: none;
-        margin-left: 5%;
-        width: 95%;
+        margin: 5%;
+        width: 90%;
     }
     nav{
-        margin: auto;
+        margin: 5%;
     }
 }
