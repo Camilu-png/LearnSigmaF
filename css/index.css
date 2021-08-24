@@ -1,0 +1,51 @@
+.derecha{
+    float:right;
+    width: 45%;
+}
+.izquierda{
+    float: left;
+    margin-left: 5%;
+    width: 45%;
+}
+nav a{
+    display: inline-block;
+    width: 50%;
+    margin: 2% 22%;
+    padding: 2%;
+    text-decoration: none;
+    color: #232d34;
+    background: rgba( 252, 173, 49, 0.65 );
+    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+nav{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav a:hover{
+    border: 1px solid rgba(80, 80, 80, 0.322);
+}
+nav a:active{
+    background-color: rgba(235, 163, 48, 0.65);
+    box-shadow: 0 1px rgba(102, 102, 102, 0.678);
+    transform: translateY(3%);
+}
+@media screen and (max-width:700px){
+    .derecha{
+        float:none;
+        width: auto;
+    }
+    .izquierda{
+        float: none;
+        margin-left: 5%;
+        width: 95%;
+    }
+    nav{
+        margin: auto;
+    }
+}
