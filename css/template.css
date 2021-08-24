@@ -55,7 +55,8 @@ footer a{
 @media screen and (max-width:700px){
 
     header img{
-        width: 25%;
+        height: 35px;
+        width: auto;
     }
     header{
         height: 40px;

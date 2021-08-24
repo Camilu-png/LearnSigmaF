@@ -8,6 +8,5 @@ function hideShow(){
         document.querySelector('.menu').classList.add('is-active');
         document.querySelector('.fa-folder').classList.remove('is-active');
         document.querySelector('.fa-folder-open').classList.add('is-active');
-    }
-    
+    }   
 }
