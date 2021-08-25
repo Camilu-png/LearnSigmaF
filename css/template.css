@@ -93,7 +93,7 @@ footer a{
         position:static;
         position:fixed;
         z-index: 3;
-        top:12%;
+        top:41px;
         right: -20%;
     }
 }
