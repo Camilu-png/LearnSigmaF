@@ -1,54 +1,71 @@
-.derecha{
-    float:right;
-    width: 45%;
+*{
+    margin: 0;
 }
-.izquierda{
-    float: left;
-    margin-left: 5%;
-    width: 45%;
-}
-img{
-    margin: 15% auto;
-}
-nav a{
-    display: inline-block;
-    width: 50%;
-    margin: 2% 22%;
-    padding: 2%;
-    text-decoration: none;
-    color: #232d34;
-    background: rgba( 252, 173, 49, 0.65 );
-    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0.0px );
-    -webkit-backdrop-filter: blur( 0.0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-nav{
-    margin-top: 15%;
+header{
+    padding: 1%;
+    background-color: #E78200;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content:space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-nav a:hover{
-    border: 1px solid rgba(80, 80, 80, 0.322);
+header nav{
+    display: flex;
+    
 }
-nav a:active{
-    background-color: rgba(235, 163, 48, 0.65);
-    box-shadow: 0 1px rgba(102, 102, 102, 0.678);
-    transform: translateY(3%);
+header nav a{
+    display: inline-block;
+    transition: .5s;
+    fill: #232d34;
+    margin: auto 20px;
 }
-@media screen and (max-width:700px){
-    .derecha{
-        float:none;
-        width: auto;
-    }
-    .izquierda{
-        float: none;
-        margin: 5%;
-        width: 90%;
-    }
-    nav{
-        margin: 5%;
-    }
+header img{
+    margin: 0;
+    padding: 1%;
+    background-color: white;
+    border-radius: 4px;
+    height: 32px;
+}
+.header-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-input-container{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #232d34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-color: #E78200;
+}
+.header-input input{
+    width: 86%;
+    height: 32px;
+    border: none;
+    outline: none;
+    color:#232d34;
+    background-color: #ffffff00;
+}
+.header-input-container:hover{
+    box-shadow: 0 1px 6px 0 #c2c2c2;
+    border-color: #eeeeee;
+
+}
+.header-input .search-icon{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/user-interface-169/32/search-256.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    margin-left: 2%;
+}
+#twitter:hover{
+    fill: rgb(255, 255, 255);
+}
+#github:hover{
+    fill: #ffffff;
 }
