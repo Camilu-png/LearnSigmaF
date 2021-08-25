@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: sans-serif;
 }
 header{
     padding: 1%;
@@ -68,4 +69,29 @@ header img{
 }
 #github:hover{
     fill: #ffffff;
+}
+
+main aside {
+    float: right;
+    margin-right: 2%;
+  }
+.nav-left{
+    float: left;
+}
+main section{
+    margin: 2% 20%;
+}
+#logo{
+    width: 60%;
+    margin: 2% auto;
+}
+.img{
+    text-align: center;
+}
+h2, h3{
+    margin: 2%;
+    text-align: center;
+}
+p{
+    margin: 2% 5%;
 }
