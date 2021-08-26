@@ -3,15 +3,18 @@
     font-family: sans-serif;
 }
 header{
-    padding: 1%;
+    position: fixed;
+    width: 100%;
+    top:0;
+    padding: .5%;
     background-color: #E78200;
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-end;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 32px;
 }
 header nav{
-    display: flex;
-    
+    display: flex;  
 }
 header nav a{
     display: inline-block;
@@ -44,7 +47,7 @@ header img{
 }
 .header-input input{
     width: 86%;
-    height: 32px;
+    height: 30px;
     border: none;
     outline: none;
     color:#232d34;
@@ -70,13 +73,31 @@ header img{
 #github:hover{
     fill: #ffffff;
 }
-
+main{
+    margin-top: 70px;
+}
 main aside {
-    float: right;
-    margin-right: 2%;
+    position: fixed;
+    right: 2%;
+    border-left: 1px solid #c2c2c2;
+    height: 85%;
   }
 .nav-left{
+    position: fixed;
     float: left;
+    padding: 1%;
+    border-right: 1px solid #c2c2c2;
+    height: 81%;
+}
+main aside a, .nav-left a{
+    text-decoration: none;
+    color:#232d34;
+}
+main aside li, .nav-left li{
+    margin: 10% auto;
+}
+main aside li ul li, .nav-left li ul li{
+    margin: 5% auto;
 }
 main section{
     margin: 2% 20%;
@@ -87,6 +108,10 @@ main section{
 }
 .img{
     text-align: center;
+}
+.img p{
+    font-size: large;
+    margin: 5%;
 }
 h2, h3{
     margin: 2%;
