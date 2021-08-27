@@ -85,15 +85,76 @@
         <aside>
             <ul>
                 <li><a href="#Linux">Install via binary archive on Linux</a></li>
-                <li><a href="#Python">Install via Interpreter of Python</a></li>
+                <li><a href="#Python">Install via Interpreter of Python</a>
+                        <ul>
+                            <li><a href="#REPL">Install REPL</a></li>
+                        </ul>
+                </li>
             </ul>
         </aside>
+        <h1>Install SigmaF</h1>
         <section>
-            <h1>Install SigmaF</h1>
             <h2 id="Linux">Install via binary archive on Linux</h2>
-            <p>The SigmaF is a new open source and functional paradigm programming language, inspired by languages like Haskell, Python, JavaScript, and Rust. SigmaF is an interpreted language fully built using Python.</p>
+            <ol>
+                <li>Download the version that you prefer in <span class="code">release</span>.</li>
+                <li>Unzip the binary archive:</li>
+                    <code>
+                        VERSION=v1.1<br>
+                        sudo mkdir -p /usr/local/lib/sigmaf<br>
+                        sudo tar -xJvf sigmaf-$VERSION.tar.xz -C /usr/local/lib/sigmaf<br>
+                    </code>
+                <li>Set the environment variable ~/.profile:</li>
+                    <code>
+                        VERSION=v1.1<br>
+                        export PATH=/usr/local/lib/sigmaf/sigmaf-$VERSION:$PATH
+                    </code>
+                <li>Refresh profile:</li>
+                    <code>
+                        . ~/.profile
+                    </code>
+                <li>Test installation using the command showed below:</li>
+                    <!-- <code>
+                       TODO: Shell Cover
+                    </code> -->
+            </ol>
+            <div class="callout">
+                <p>WARNING: If you have problems with this installation you can modify the file <span class="code">home/.bashrc</span> by going to the end and inserting the following:</p>
+                <code>
+                    ## SigmaF<br>
+                    VERSION=v1.1<br>
+                    export PATH=/usr/local/lib/sigmaf/sigmaf-$VERSION:$PATH
+                </code>
+            </div>
+        </section>
+        <section>
             <h2 id="Python">Install via Interpreter of Python</h2>
-            <p>This language is designed to be a multipurpose functional programming language, with a focus on be able to write programs that are easy to understand and easy to write, using a syntax similar to programming languages of imperative paradigm. Of way that be a bridge between imperative and functional paradigm.</p>
+            <p>It has been implemented only in REPL for the moment, but you can execute a file with the ' .sf ' extension on it.</p>
+            <h3 id="REPL">To install the REPL you have to do the following steps:</h3>
+            <ol>
+                <li>Clone the repository in your machine.</li>
+                <li>Create a virtual enviroment:</li>
+                    <code>
+                        python3 -m venv venv
+                    </code>
+                <li>Run the virtual enviroment:
+                    <ul>
+                        <li>Linux or Mac</li>
+                            <code>
+                               <span class="blue">cd</span> sigmaF<br>
+                               <span class="blue">source</span> venv/bin/activate<br>
+                            </code>
+                        <li>Windows</li>
+                            <code>
+                                <span class="blue">cd</span> sigmaF<br>
+                                <span class="blue">source</span> /venv/Scripts/activate
+                            </code>
+                    </ul>
+                </li>
+                <li>Install requirements:</li>
+                    <code>
+                        pip install -r requirements.txt
+                    </code>
+            </ol>
         </section>
       
     </main>

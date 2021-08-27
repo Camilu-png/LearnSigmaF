@@ -106,9 +106,7 @@ main aside li ul li, .nav-left li ul li{
     margin: 5% auto;
 }
 main section{
-    margin-top: 2%;
-    margin-left: 17%;
-    margin-right: 17%;
+    margin: 2% 17%;
 }
 main section img{
     justify-content: center;
@@ -127,10 +125,44 @@ main section img{
     margin: 5%;
 }
 h1, h2, h3{
-    margin: 2%;
+    margin: 3%;
     text-align: center;
+}
+main section li{
+    margin: 1% 5%;
 }
 main section p{
     margin: 2% 10%;
     line-height: 150%;
+}
+code {
+    display: block;
+    width: 85%;
+    margin: 2% auto;
+    font-family: Consolas,"courier new";
+    color: #eeeeee;
+    border-radius: 10px;
+    background-color: #232d34;
+    padding: 2%;
+}
+
+.code{
+    font-family: Consolas,"courier new";
+    background-color: #161c2070;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: .5%;
+    border: 1px solid #232d342a;
+}
+.callout{
+    width: 80%;
+    margin: 2% auto;
+    border-left: 5px solid #cecece;
+}
+.callout p{
+    margin: 1% 6%;
+}
+.blue{
+    font-family: Consolas,"courier new";
+    color: rgb(127, 207, 201);
 }
