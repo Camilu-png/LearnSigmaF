@@ -2,6 +2,11 @@
     margin: 0;
     font-family: sans-serif;
 }
+.fa-folder,.fa-folder-open{
+    display:none;
+    position:fixed;
+    left: .5%;
+}
 header{
     position: fixed;
     width: 100%;
@@ -165,4 +170,44 @@ code {
 .blue{
     font-family: Consolas,"courier new";
     color: rgb(127, 207, 201);
+}
+@media screen and (max-width:1132px){
+
+    aside{
+        display:none;
+    }
+    main section{
+        width: 100%;
+        margin: auto;
+    }
+    .fa-folder,.fa-folder-open{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color: #fcc06b44;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        z-index: 4;
+        right: 1%;
+        top: 1%;
+        color: rgb(255, 255, 255, 0);
+    }
+    .fa-folder.is-active,.fa-folder-open.is-active{
+        color: #575f65
+    }
+    .nav-left{
+        display:none;
+    }
+    .nav-left.is-active{
+        display:block;
+        height:auto;
+        margin: 0;
+        position:static;
+        position:fixed;
+        z-index: 3;
+        top:40px;
+        left: 0;
+        background-color: #e78300;
+    }
 }
