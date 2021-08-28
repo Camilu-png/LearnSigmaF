@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="install,follow"/>
-    <meta name="description" content="How to install SigmaF, either using Linux or Python" />
+    <meta name="robots" content="index,follow"/>
+    <meta name="description" content="How to be part of the SigmaF community"/>
+    <meta name="google-site-verification" content="PZm60DW9x51UX7tlBUQDspHyURX2L9XyEJs9lsPlti4" />
     <link rel="icon" type="image/png" href="image/SigmaF.png" />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Install SigmaF</title>
+    <title>SigmaF</title>
   </head>
   <body>
     <header>
+        <h1 class="invisible">SigmaF</h1>
         <div class="header-right">
             <div class="header-input">
                 <div class="header-input-container">
@@ -20,7 +22,7 @@
                 </div>
             </div>
             <nav>
-                <a id="twitter" href="https://twitter.com/SigmaF_" target="_blank"> 
+                <a id="twitter" href="https://twitter.com/SigmaF_" target="_blank">
                     <svg
                         height="30"
                         viewBox="0 0 24 24"
@@ -69,7 +71,7 @@
             <ul>
                 <li><a href="index.html">Welcome to SigmaF</a></li>
                 <li><a href="">Overview</a></li>
-                <li><a href="#">Install</a></li>
+                <li><a href="install.html">Install</a></li>
                 <li><a href="">Learn SigmaF</a>
                     <ul>
                         <li><a href="#">Functional Programming</a><br></li>
@@ -79,84 +81,42 @@
                         <li><a href="#">Operators</a></li>
                     </ul>
                 </li>
-                <li><a href="contribute.html">Contribute</a></li>
+                <li><a href="">Contribute</a></li>
             </ul>
         </nav>
         <aside>
             <ul>
-                <li><a href="#Linux">Install via binary archive on Linux</a></li>
-                <li><a href="#Python">Install via Interpreter of Python</a>
-                        <ul>
-                            <li><a href="#REPL">Install REPL</a></li>
-                        </ul>
-                </li>
+                <li><a href="#Why?">Why be a member?</a></li>
+                <li><a href="#How?">How to start contributing?</a></li>
             </ul>
         </aside>
         <section>
-            <h1>Install SigmaF</h1>
-            <h2 id="Linux">Install via binary archive on Linux</h2>
+            <h1>How to contribute to SigmaF?</h1>
+            <p>This is an opensource project, everyone can contribute and become a member of the community of SigmaF.</p>
+            <h2 id="Why?">Why be a member of the SigmaF community?</h2>
             <ol>
-                <li>Download the version that you prefer in <span class="code">release</span>.</li>
-                <li>Unzip the binary archive:</li>
-                    <code>
-                        VERSION=v1.1<br>
-                        sudo mkdir -p /usr/local/lib/sigmaf<br>
-                        sudo tar -xJvf sigmaf-$VERSION.tar.xz -C /usr/local/lib/sigmaf<br>
-                    </code>
-                <li>Set the environment variable ~/.profile:</li>
-                    <code>
-                        VERSION=v1.1<br>
-                        export PATH=/usr/local/lib/sigmaf/sigmaf-$VERSION:$PATH
-                    </code>
-                <li>Refresh profile:</li>
-                    <code>
-                        . ~/.profile
-                    </code>
-                <li>Test installation using the command showed below:</li>
-                    <!-- <code>
-                       TODO: Shell Cover
-                    </code> -->
+                <li>A simple and understandable code</li>
+                <p>The source code of the interpreter is made with Python 3.8, a language easy to learn, also good practices are a priority for this project.</p>
+                <li>A great potencial</li>
+                <p>This project has a great potential to be the next programming language of the functional paradigm, to development the AI, and to development new metaheuristics.</p>
+                <li>Scalable development</li>
+                <p>One of the mains approaches of this project is the implementation of TDD from the beggining and the development of new features, which allows scalability.</p>
+                <li>Simple and power</li>
+                <p>One of the main purposes of this programming language is to create an easy-to-learn functional language, which at the same time is capable of processing large amounts of data safely and allows concurrence and parallelism.</p>
+                <li>Respect for diversity</li>
+                <p>Everybody is welcome, it does not matter your genre, experience or nationality. Anyone with enthusiasm can be part of this project. Anyone from the most expert to the that is beginning to learn about programming, marketing, design, or any career.</p>
             </ol>
-            <div class="callout">
-                <p>WARNING: If you have problems with this installation you can modify the file <span class="code">home/.bashrc</span> by going to the end and inserting the following:</p>
-                <code>
-                    ## SigmaF<br>
-                    VERSION=v1.1<br>
-                    export PATH=/usr/local/lib/sigmaf/sigmaf-$VERSION:$PATH
-                </code>
-            </div>
         </section>
         <section>
-            <h2 id="Python">Install via Interpreter of Python</h2>
-            <p>It has been implemented only in REPL for the moment, but you can execute a file with the ' .sf ' extension on it.</p>
-            <h3 id="REPL">To install the REPL you have to do the following steps:</h3>
-            <ol>
-                <li>Clone the repository in your machine.</li>
-                <li>Create a virtual enviroment:</li>
-                    <code>
-                        python3 -m venv venv
-                    </code>
-                <li>Run the virtual enviroment:
-                    <ul>
-                        <li>Linux or Mac</li>
-                            <code>
-                               <span class="blue">cd</span> sigmaF<br>
-                               <span class="blue">source</span> venv/bin/activate<br>
-                            </code>
-                        <li>Windows</li>
-                            <code>
-                                <span class="blue">cd</span> sigmaF<br>
-                                <span class="blue">source</span> /venv/Scripts/activate
-                            </code>
-                    </ul>
-                </li>
-                <li>Install requirements:</li>
-                    <code>
-                        pip install -r requirements.txt
-                    </code>
-            </ol>
+            <h2 id="How?">How to start contributing?</h2>
+            <p>There are multiply ways to contribute, since sharing this project, improving the brand of SigmaF, helping to solve the bugs or developing new features and making improves to the source code.</p>
+            <ul>
+                <li><b>Share this project:</b> You can put your star in the repository, or talk about this project. You can use the hashtag #SigmaF in Twitter, LinkedIn or any social network too.</li>
+                <li><b>Improve the brand of SigmaF:</b> If you are a marketer, designer or writer, and you want to help, you are welcome. You can contact me on Twitter like @fabianmativeal if you are interested on doing it.</li>
+                <li><b>Help to solve the bugs:</b> if you find one bug notify me an issue. On this we can all improve this language.</li>
+                <li><b>Developing new features:</b> If you want to develop new features or making improvements to the project, you can do a fork to the <span class="code">dev</span> branch (here are the ultimate develops) working there, and later do a <span class="code">pull request</span> to <span class="code">dev</span> branch in order to update <b>SigmaF</b>.</li>
+            </ul>
         </section>
-      
     </main>
   </body>
 </html>

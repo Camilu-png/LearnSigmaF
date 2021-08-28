@@ -126,10 +126,10 @@ main section img{
 }
 h1, h2, h3{
     margin: 3%;
-    text-align: center;
 }
 main section li{
     margin: 1% 5%;
+    line-height: 160%;
 }
 main section p{
     margin: 2% 10%;
