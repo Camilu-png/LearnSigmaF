@@ -170,7 +170,85 @@ code {
 }
 .blue{
     font-family: Consolas,"courier new";
-    color: rgb(127, 207, 201);
+    color: rgb(91, 181, 241);
+}
+.yellow{
+    font-family: Consolas,"courier new";
+    color: rgb(241, 231, 91);
+}
+.red{
+    font-family: Consolas,"courier new";
+    color: rgb(255, 111, 111);
+}
+.orange{
+    font-family: Consolas,"courier new";
+    color: rgb(255, 158, 78);
+}
+.comment{
+    font-family: Consolas,"courier new";
+    color: rgb(148, 148, 148);
+}
+.tab{
+    font-family: Consolas,"courier new";
+    margin-left: 4%;
+}
+.doubletab{
+    font-family: Consolas,"courier new";
+    margin-left: 8%;
+}
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin: 2% 10%;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-kftd{
+    background-color:#efefef;
+    text-align:left;
+    vertical-align:top;
+}
+.tg .tg-u1yq{
+    background-color:#c0c0c0;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top;
+}
+.tg .tg-y6fn{
+    background-color:#c0c0c0;
+    text-align:left;
+    vertical-align:top;
+}
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
+    }
+    .tg col {
+        width: auto !important;
+    }.tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: auto 0px;
+    }
 }
 @media screen and (max-width:1132px){
 
