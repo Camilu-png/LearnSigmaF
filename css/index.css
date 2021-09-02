@@ -1,54 +1,305 @@
-.derecha{
-    float:right;
-    width: 45%;
+*{
+    margin: 0;
+    font-family: sans-serif;
 }
-.izquierda{
-    float: left;
-    margin-left: 5%;
-    width: 45%;
+.fa-bars{
+    display:none;
+    position:fixed;
+    left: .5%;
+    top: 15px;
 }
-img{
-    margin: 15% auto;
-}
-nav a{
-    display: inline-block;
-    width: 50%;
-    margin: 2% 22%;
-    padding: 2%;
-    text-decoration: none;
-    color: #232d34;
-    background: rgba( 252, 173, 49, 0.65 );
-    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 0.0px );
-    -webkit-backdrop-filter: blur( 0.0px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-nav{
-    margin-top: 15%;
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    padding: .5%;
+    background-color: #E78200;
     display: flex;
-    flex-direction: column;
+    justify-content:flex-end;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 32px;
+}
+.invisible{
+    display: none;
+}
+h1{
+    font-size: xx-large;
+}
+header nav{
+    display: flex;  
+}
+header nav a{
+    display: inline-block;
+    transition: .5s;
+    fill: #232d34;
+    margin: auto 20px;
+}
+header img{
+    margin: 0;
+    padding: 1%;
+    background-color: white;
+    border-radius: 4px;
+    height: 32px;
+}
+.header-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-input-container{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid #232d34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-color: #E78200;
+}
+.header-input input{
+    width: 86%;
+    height: 30px;
+    border: none;
+    outline: none;
+    color:#232d34;
+    background-color: #ffffff00;
+}
+.header-input-container:hover{
+    box-shadow: 0 1px 6px 0 #c2c2c2;
+    border-color: #eeeeee;
+
+}
+.header-input .search-icon{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/user-interface-169/32/search-256.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    margin-left: 2%;
+}
+#twitter:hover{
+    fill: rgb(255, 255, 255);
+}
+#github:hover{
+    fill: #ffffff;
+}
+main{
+    margin-top: 70px;
+}
+main aside {
+    position: fixed;
+    right: 2%;
+    border-left: 1px solid #c2c2c2;
+    height: 85%;
+  }
+.nav-left{
+    position: fixed;
+    float: left;
+    padding: 1%;
+    border-right: 1px solid #c2c2c2;
+    height: 81%;
+}
+main aside a, .nav-left a{
+    text-decoration: none;
+    color:#232d34;
+}
+main aside li, .nav-left li{
+    width: 150px;
+}
+main aside li ul li, .nav-left li ul li{
+    margin: 5% auto;
+}
+main section{
+    margin: 2% 17%;
+}
+main section img{
+    justify-content: center;
+    width: 95%;
+    margin-left: 2.5%;
+}
+#logo{
+    width: 60%;
+    margin: 2% auto;
+}
+.img{
     text-align: center;
 }
-nav a:hover{
-    border: 1px solid rgba(80, 80, 80, 0.322);
+.img p{
+    font-size: large;
+    margin: 5%;
 }
-nav a:active{
-    background-color: rgba(235, 163, 48, 0.65);
-    box-shadow: 0 1px rgba(102, 102, 102, 0.678);
-    transform: translateY(3%);
+h1, h2, h3{
+    margin: 3%;
 }
-@media screen and (max-width:700px){
-    .derecha{
-        float:none;
-        width: auto;
+main section li{
+    margin: 1% 5%;
+    line-height: 160%;
+}
+main section p{
+    margin: 2% 10%;
+    line-height: 150%;
+}
+code {
+    display: block;
+    width: 85%;
+    margin: 2% auto;
+    font-family: Consolas,"courier new";
+    color: #eeeeee;
+    border-radius: 10px;
+    background-color: #232d34;
+    padding: 2%;
+}
+
+.code{
+    font-family: Consolas,"courier new";
+    background-color: #161c2070;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: .5%;
+    border: 1px solid #232d342a;
+}
+.callout{
+    width: 80%;
+    margin: 2% auto;
+    border-left: 5px solid #cecece;
+}
+.callout p{
+    margin: 1% 6%;
+}
+.blue{
+    font-family: Consolas,"courier new";
+    color: rgb(91, 181, 241);
+}
+.yellow{
+    font-family: Consolas,"courier new";
+    color: rgb(241, 231, 91);
+}
+.red{
+    font-family: Consolas,"courier new";
+    color: rgb(255, 111, 111);
+}
+.orange{
+    font-family: Consolas,"courier new";
+    color: rgb(255, 158, 78);
+}
+.comment{
+    font-family: Consolas,"courier new";
+    color: rgb(148, 148, 148);
+}
+.tab{
+    font-family: Consolas,"courier new";
+    margin-left: 4%;
+}
+.doubletab{
+    font-family: Consolas,"courier new";
+    margin-left: 8%;
+}
+.tg  {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin: 2% 10%;
+}
+.tg td{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg th{
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+.tg .tg-kftd{
+    background-color:#efefef;
+    text-align:left;
+    vertical-align:top;
+}
+.tg .tg-u1yq{
+    background-color:#c0c0c0;
+    font-weight:bold;
+    text-align:center;
+    vertical-align:top;
+}
+.tg .tg-y6fn{
+    background-color:#c0c0c0;
+    text-align:left;
+    vertical-align:top;
+}
+@media screen and (max-width: 767px) {
+    .tg {
+        width: auto !important;
     }
-    .izquierda{
-        float: none;
-        margin: 5%;
+    .tg col {
+        width: auto !important;
+    }.tg-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin: auto 0px;
+    }
+}
+@media screen and (max-width:1132px){
+
+    aside{
+        display:none;
+    }
+    main section{
+        width: 100%;
+        margin: auto;
+    }
+    .fa-bars{
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        z-index: 4;
+        right: 1%;
+        top: 1%;
+        color: rgb(255, 255, 255, 0);
+    }
+    .fa-bars.is-active{
+        color: #575f65
+    }
+    .nav-left{
+        display:none;
+    }
+    .nav-left.is-active{
+        display:block;
+        height:auto;
+        margin: 0;
+        position:static;
+        position:fixed;
+        z-index: 3;
+        top:40px;
+        left: 0;
+        background-color: #e78300;
+    }
+    .header-right{
+        width: 80%;
+    }
+    .header-input-container{
+        width: 200px;
+    }
+}
+@media screen and (max-width:430px) {
+    .header-right{
         width: 90%;
     }
-    nav{
-        margin: 5%;
+    .header-input-container{
+        width: 100px;
     }
 }
