@@ -13,17 +13,23 @@
     <title>Install SigmaF</title>
   </head>
   <body>
-    <i class="fas fa-bars is-active" onclick="hideShow()"></i>
+    <button class="fas fa-bars" onclick="hideShow()" aria-label="Open navigation menu" aria-expanded="false"></button>
     <header>
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="./image/logo.png" alt="SigmaF Logo" class="header-logo" />
+                <span class="logo-text">SigmaF</span>
+            </a>
+        </div>
         <div class="header-right">
             <div class="header-input">
                 <div class="header-input-container">
                     <span class="search-icon"> </span>
-                    <input type="text" />
+                    <input type="text" placeholder="Search documentation..." aria-label="Search SigmaF documentation" />
                 </div>
             </div>
             <nav>
-                <a id="twitter" href="https://twitter.com/SigmaF_" target="_blank"> 
+                <a id="twitter" href="https://twitter.com/SigmaF_" target="_blank" rel="noopener noreferrer" aria-label="Follow SigmaF on Twitter">
                     <svg
                         height="30"
                         viewBox="0 0 24 24"
@@ -48,7 +54,7 @@
                         </g>
                     </svg>
                 </a>
-                <a id="github" href="https://github.com/FabianVegaA/sigmaF" target="_blank">
+                <a id="github" href="https://github.com/FabianVegaA/sigmaF" target="_blank" rel="noopener noreferrer" aria-label="View SigmaF on GitHub">
                     <svg
                         height="30"
                         aria-hidden="true"
